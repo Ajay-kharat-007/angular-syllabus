@@ -1,27 +1,14 @@
-# AngularStuff
+# Angular Syllabus
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+globally intallation of angular -- npm install -g @angular/cli
+verstion check command -- ng version
 
-## Development server
+# DATA Binding 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Interpolation / One way data Binding / <h1>{{Value}}</h1>
+2. Property Binding / One Way data Binding / <img [src]="imageUrl">
+3. Event Binding / One Way data Binding / <button (click)="onClick()">Click me</button>
+5. Class Binding / One Way data Binding / <div [ngClass]="{ active: isActive }"> / change class on variable
+6. Style Binding /  One Way data Binding / <div [ngStyle]="{ 'font-size': fontSize + 'px' }">
+7. Attribute Binding / One Way data Binding / <h1 [attr.title]="isDisabled">Click me</h1>
+4. Two way Binding / two way data Binding / <input [(ngModel)]="name"> / need to import formmodule

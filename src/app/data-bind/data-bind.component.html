@@ -1,0 +1,15 @@
+<h1>{{title}}</h1> <!--One-Way-Databinding / Interpolation-->
+<img src="../../favicon.ico" [alt]="alt">
+<button (click)="showAlert()">Show Alert</button>
+<input type="text" name="text" id="text" [(ngModel)]="name">
+<h1>{{name}}</h1>
+<div [ngClass]="{ 'alert': isAlert, 'success': !isAlert }">
+    {{ message }}
+</div>
+<button (click)="change()">Change Class</button>
+<div [style.fontSize]="'40px'">Show me Something</div>
+<div [ngStyle]="{'font-size' : '40px'}">The Chat Example</div>
+<button (click)="btnn()">Show Button</button>
+<button [attr.disabled]="isDisabled">This is Hidden Data</button>
+<h1 [attr.title]="isDisabled">Click me</h1>
+
